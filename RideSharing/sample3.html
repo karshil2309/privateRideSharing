@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Fetch API</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js"></script>
+</head>
+<body>
+	<div>
+	<h1>Fetch API GET REQUEST</h1>
+	<h3>Fetching Users</h3>
+
+	<!-- Table to display fetched user data -->
+	<table id="users"></table>
+	</div>
+
+	<!-- Link JavaScript file -->
+	<script type="text/javascript">
+
+    // GET request using fetch()
+    fetch("http://localhost:8080/rideCall/ridedetails")
+
+    	// Converting received data to JSON
+    	.then(response => response.json())
+    	.then(json => {
+
+    		// Create a variable to store HTML
+    		let li = `<tr><th>Name</th><th>Email</th><th>Website</th></tr>`;
+
+    		// Loop through each data and add a table row
+    		json.forEach(user => {
+    			li += `<tr>
+    				<td>${user.rid} </td>
+    				<td>${user.source}</td>
+    				<td>${user.date}</td>
+    				<td>${user.driverloginmodel.driverphonenum}</td>
+    			</tr>`;
+    		});
+
+    	// Display result
+    	document.getElementById("users").innerHTML = li;
+    });
+
+  </script>
+</body>
+</html>

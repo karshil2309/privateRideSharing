@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="assets/css/login.css" />
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <!-- Linked Libraries and css files over here -->
+</head>
+
+<body>
+<!-- div of login starts -->
+    <div class="box">
+        <h1>Rider Login </h1>
+        <form id="search-form" name="search-form" method="post">
+            <input type="email" name="email" id="email" placeholder="Enter your Email" />
+            <input type="password" name="password" id="password" placeholder="Enter your password" />
+            <input type="submit" name="submit" value="Login" id="submitForm">
+            <a href="#">Forgot password</a>
+
+        </form>
+    </div>
+    <!-- div of login closes -->
+    <div class="home">
+        <a href="index.html" class="btn">Back To Home</a>
+
+    </div>
+    <!-- added login.js file where ajax call is written -->
+    <script src="assets/js/login.js"></script>
+</body>
+
+</html>

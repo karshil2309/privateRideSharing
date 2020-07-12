@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ride Sharing System">
+    <meta name="author" content="Karshil Sheth - Gateway Group">
+
+    <!-- meta elements end -->
+    <title>Ride Sharing System</title>
+    <link rel="icon" href="assets/images/login-title.jpg" style="border-radius: 50px;">
+    <!-- css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/register.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap">
+
+
+
+
+
+</head>
+<body>
+  <h1 class="text-white text-center pt-5"> Registration Yourself</h1>
+  <div class="container">
+
+    <form id="survey-form" method="post" action="login.html">
+      <div class="form-group">
+        <label id="name-label" for="name">First Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Last Name</label>
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          class="form-control"
+          placeholder="Enter your last Name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter your Email"
+        />
+      </div>
+      <div class="form-group ">
+              <label id="password" for="password">Password</label>
+              <input type="password" id="password" name="password" class="form-control" required>
+          </div>
+      <div class="form-group ">
+          <label id="date" for="number">Date of Birth</label>
+        <input type="date" id="date" name="date" class="form-control date" required>
+      </div>
+
+
+
+
+      <!-- <div class="form-group ">
+              <label id="Confirmpassword" for="password"> Confirm Password</label>
+              <input type="password" id="password" name="password" class="form-control" required>
+          </div> -->
+
+      <div class="form-group">
+        <p>  <label id="textaddress" for="text">Address</label>
+        </p>
+        <textarea
+          id="address"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your address here..."
+        ></textarea>
+      </div>
+      <div class="form-group ">
+              <label id="creditInfo" >creditInfo</label>
+              <input type="text" id="creditInfo" name="creditInfo" class="form-control" required>
+          </div>
+
+
+
+
+
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="site-info">Designed and Developed by Karshil Sheth</a></p>
+                    <ul class="social-block">
+                        <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                        <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                        <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                        <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/registerapi.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+        //     spinner = document.getElementById('spinner');
+        //     spinner.style.display = 'none';
+
+
+
+        })
+    </script>
+
+
+</body>
+</html>

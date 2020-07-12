@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+
+</head>
+<body>
+
+
+<center>
+ Javascript Get Request Test
+ <center>
+ <table border="1">
+ <tr><td>statusCode :</td>
+  <td><label>Userid <input type="number" id="userid"></td></tr>
+
+<tr><td><label> First Name  <input type="text" id="firstName"></td></tr>
+<tr><td> <label> Email<input type="email" id="email"></td></tr>
+<tr><td><input type="submit" id="update" value="Update"></td></tr>
+
+ <tr><td>regionName :</td><td id="regionName"></td></tr>
+ <tr><td>cityName :</td><td id="cityName"></td></tr>
+ <tr><td>zipCode :</td><td id="zipCode"></td></tr>
+ <tr><td>latitude :</td><td id="latitude"></td></tr>
+ <tr><td>longitude :</td><td id="longitude"></td></tr>
+ <tr><td>timeZone :</td><td id="timeZone"></td></tr>
+ </table>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#update").click(function(){
+    $("td").hide();
+  });
+});
+
+</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+</body>
+</html>

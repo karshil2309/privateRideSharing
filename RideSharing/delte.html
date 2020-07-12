@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js"></script>
+    <title></title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#Save").click(function () {
+                var person = new Object();
+                person.name = $('#name').val();
+                person.surname = $('#surname').val();
+                $.ajax({
+                    url: 'http://localhost:3413/api/person',
+                    type: 'DELETE',
+                    dataType: 'json',
+                    data:person,
+                    success: function (data, textStatus, xhr) {
+                        console.log(data);
+                    },
+                    error: function (xhr, textStatus, errorThrown) {
+                        console.log('Error in Operation');
+                    }
+                });
+            });
+        });
+   </script>
+  </head>
+  <body>
+    <form name="form1" id="form1">
+          Name:- <input type="text"  name="name" id="name" />
+          Surname:-<input type="text"  name="surname" id="surname" />
+          <input type="button" id="Save" value="Save Data" />
+      </form>
+  </body>
+</html>
